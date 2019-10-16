@@ -25,8 +25,6 @@ split (c:cs) | (c == ','||  c == '(' || c == ')' || c == ';') = "":rest
              | otherwise = (c : head rest) : tail rest
     where rest = split cs
 
-
-
 main = do
     input <- readFile "enable1.txt"
     let [a,b,cs,d] = lines input 
